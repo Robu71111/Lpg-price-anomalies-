@@ -1,0 +1,75 @@
+:root {
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #666;
+  --color-text-tertiary: #999;
+  --color-text-danger: #c53030;
+  --color-text-warning: #b7791f;
+  --color-text-success: #276749;
+  --color-text-info: #2b6cb0;
+  --color-background-primary: #ffffff;
+  --color-background-secondary: #f7f7f5;
+  --color-background-tertiary: #eeeee9;
+  --color-background-danger: #fff5f5;
+  --color-background-warning: #fffff0;
+  --color-background-success: #f0fff4;
+  --color-background-info: #ebf8ff;
+  --color-border-tertiary: rgba(0, 0, 0, 0.1);
+  --color-border-secondary: rgba(0, 0, 0, 0.2);
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text-primary: #e8e6e0;
+    --color-text-secondary: #a8a69f;
+    --color-text-tertiary: #737168;
+    --color-text-danger: #feb2b2;
+    --color-text-warning: #fefcbf;
+    --color-text-success: #9ae6b4;
+    --color-text-info: #90cdf4;
+    --color-background-primary: #1a1a18;
+    --color-background-secondary: #2a2a27;
+    --color-background-tertiary: #333330;
+    --color-background-danger: #352020;
+    --color-background-warning: #353520;
+    --color-background-success: #203525;
+    --color-background-info: #1a2a35;
+    --color-border-tertiary: rgba(255, 255, 255, 0.1);
+    --color-border-secondary: rgba(255, 255, 255, 0.2);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-background-primary);
+  color: var(--color-text-primary);
+  line-height: 1.6;
+  padding: 16px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+select,
+input,
+button {
+  font-family: var(--font-sans);
+  border: 0.5px solid var(--color-border-secondary);
+  border-radius: var(--border-radius-md);
+  background: var(--color-background-primary);
+  color: var(--color-text-primary);
+  cursor: pointer;
+}
+
+select:hover,
+input:hover {
+  border-color: var(--color-text-tertiary);
+}
